@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentlayout">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/HistoryPhoto"
+        android:src = "@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/ItemName"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Hello"
+        app:layout_constraintStart_toEndOf="@+id/HistoryPhoto"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/ItemID"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ItemPrice"
+        android:layout_width="62dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ItemDate" />
+
+    <TextView
+        android:id="@+id/ItemDate"
+        android:layout_width="67dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="92dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="78dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:text="Delete"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ItemDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ItemDate"
+        tools:textSize="4sp" />
+
+    <TextView
+        android:id="@+id/Price_Fixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="4dp"
+        android:text="Price:"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/HistoryPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/ItemName" />
+
+    <TextView
+        android:id="@+id/Date_Fixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="4dp"
+        android:text="Date:"
+        app:layout_constraintStart_toEndOf="@+id/Price_Fixed"
+        app:layout_constraintTop_toBottomOf="@+id/ItemName" />
+
+</android.support.constraint.ConstraintLayout>
